@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: employee
+  template:
+    metadata:
+      labels:
+        app: employee
+    spec:
+      containers:
+      - name: employee
+        image: dockersing/employee:1.0
+        ports:
+        - containerPort: 8000
+          protocol: TCP
+        env:
+        - name: SPRING_DATASOURCE_USERNAME
+          value: 'venky'
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: 'password' 
+        - name: SPRING_DATASOURCE_URL
+          value: 'jdbc:mysql://mysqlsvc:3306/todo_example' 
