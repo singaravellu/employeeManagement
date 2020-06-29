@@ -9,3 +9,6 @@ SPRING_DATASOURCE_PASSWORD
 
 
 mvn package -DskipTests
+
+ docker exec -it <id/name> mysql -u *** -p ***
+
