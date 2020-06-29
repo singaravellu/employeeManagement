@@ -1,0 +1,5 @@
+/home/ubuntu/employeeMgt/src/main/java/com/employee/employeeMgt/EmployeeMgtApplication.java
+/home/ubuntu/employeeMgt/src/main/java/com/employee/employeeMgt/controller/EmpController.java
+/home/ubuntu/employeeMgt/src/main/java/com/employee/employeeMgt/pojo/Employee.java
+/home/ubuntu/employeeMgt/src/main/java/com/employee/employeeMgt/service/EmployeeService.java
+/home/ubuntu/employeeMgt/src/main/java/com/employee/employeeMgt/dao/JpaRepos.java
